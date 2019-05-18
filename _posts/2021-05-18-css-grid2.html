@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "CSS grid2"
+date:   2019-05-17 16:20:40
+categories: css-grid
+---
+
+<html lang="en"> 
+    <head>
+        <title>CSS Grid</title>
+
+        <style>
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1em;
+                /* grid-auto-rows: 100px; */
+                /* // content stretches container  */
+                grid-auto-rows: minmax(100px, auto); 
+            }
+
+            .nested {
+                display:grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 70px;
+                grid-gap:1em;
+            }
+
+            .wrapper > div {
+            background: #eee;
+            padding:1em;
+        }
+
+        .wrapper > div:nth-child(odd) {
+            background:#ddd;
+        }
+
+        .nested > div {
+            border: #333 1px solid;
+            padding: 1em;
+        }
+        </style>
+        
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div>
+                Deserunt officia ipsum laborum voluptate cupidatat cillum anim cillum commodo consectetur reprehenderit laboris nulla officia.
+            </div>
+            <div>
+                    Deserunt officia ipsum laborum voluptate cupidatat cillum anim cillum commodo consectetur reprehenderit laboris nulla officia.
+                    Irure nisi minim in in amet eiusmod culpa. Veniam non aliquip mollit eiusmod culpa deserunt minim est proident nostrud veniam enim commodo ex. Incididunt anim officia quis velit ullamco excepteur.
+
+Ut sunt magna culpa sunt sunt Lorem. Velit voluptate pariatur deserunt amet mollit. Id aliquip aute ipsum cillum. Ea anim veniam nisi sunt Lorem qui nulla nostrud pariatur.
+
+Mollit ipsum elit aliquip ullamco ipsum amet sint amet. Laboris sint anim sunt ipsum veniam quis ullamco. Magna amet magna velit magna occaecat consequat laborum ad magna. Sint nostrud minim nulla nulla voluptate adipisicing quis ullamco excepteur mollit irure do incididunt cupidatat. Cupidatat adipisicing ullamco aliquip et aliqua ullamco commodo deserunt non esse. Adipisicing do ut ipsum ea in cupidatat aute ullamco.
+
+Proident eiusmod dolor sint commodo labore culpa et. Consectetur elit ullamco pariatur amet ea labore quis sit fugiat mollit. Voluptate elit consectetur labore duis est exercitation id amet ullamco cupidatat deserunt minim sint magna. Eiusmod laboris dolor reprehenderit nostrud sit enim. Voluptate amet fugiat nisi aliqua consequat elit deserunt qui ut commodo sit sit exercitation elit. Sint ipsum duis occaecat commodo.
+
+Velit officia nostrud veniam id. Ullamco ex sit eu enim. Nostrud et adipisicing minim reprehenderit. Est Lorem pariatur culpa ipsum eiusmod dolore non id quis. Dolor exercitation ipsum proident ullamco ut velit excepteur elit officia. Dolor ut ullamco adipisicing labore minim.
+            </div>
+            <div class="nested">
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+            </div>
+            <div>
+                    Deserunt officia ipsum laborum voluptate cupidatat cillum anim cillum commodo consectetur reprehenderit laboris nulla officia.
+            </div>
+            <div>
+                    Deserunt officia ipsum laborum voluptate cupidatat cillum anim cillum commodo consectetur reprehenderit laboris nulla officia.
+            </div>
+            <div>
+                    Deserunt officia ipsum laborum voluptate cupidatat cillum anim cillum commodo consectetur reprehenderit laboris nulla officia.
+            </div>
+        </div>
+    </body>
+</html>

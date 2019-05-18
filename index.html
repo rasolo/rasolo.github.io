@@ -3,7 +3,12 @@ layout: default
 ---
 
 <div class="home">
-
+  <section class="hero">
+    <div class="hero_background-container">
+      <p>rasmusolofssons@github.io</p>
+      <img src="{{ '/assets/img/butterfly.jpg' | relative_url }}"/>
+    </div>
+  </section>
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
@@ -14,9 +19,8 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <h2>Baseurl: {{site.baseurl}} </h2>
       </li>
     {% endfor %}
-  </ul>
+  </ul> 
 
 </div>
