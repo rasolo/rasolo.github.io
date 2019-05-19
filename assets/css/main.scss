@@ -3,59 +3,29 @@
 # only Main files contain this front matter, not partials.
 ---
 
-body {
-    .hero_background-container{ 
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        grid-template-rows: 20% 20% 20% 20% 20%;
-   
-        img {
-            // grid-column-start: 1;
-            // grid-column-end: 6;
-            // grid-row-start: 1;
-            // grid-row-end: 6;
-            //height: 100%;
-            width: 100%;
-            object-fit: cover;
-            grid-column-start: span 6;
-            /* grid-column-end: span 6; */
-            grid-row-start: span 6;
-            grid-row-end: none;
-        }
-        p {
-            z-index: 1;
-            color: white;
-            font-size: 6em;
-            margin: 0;
-            grid-column-start: 2;
-            grid-column-end: 4;
-        }
+html {
+    *, *::before, *::after {
+        box-sizing: border-box;
     }
-    // .home{
-    //     display:inline-block;
-    // }
-    // .hero {
-    //     // width:200vh;
-    //      height:200vh;
-    //     .hero_background-container{ 
-    //         background: url(/assets/img/butterfly.jpg) no-repeat;
-    //         background-size: cover;
-    //         border-radius: 25px;
-    //         display: grid;
-    //         align-items: center;
-    //         justify-items: center;
-    //         height: 100%;
-    //         p {
-    //             color: #ffffff;
-    //             margin: 0;
-    //             font-size: 6em;
-    //             font-family: Geneva,Tahoma,Verdana,sans-serif; 
-    //             // font-family: Georgia, serif;
-    //         }
-    //         img {
-    //             width:100%;
-    //         }   
-    //     }
-    // }
+}
+body {
+     .hero_background-container{ 
+         position: relative;
 
+         img {
+             width: 100%;
+         }
+
+         h1 {
+             position: absolute;
+             left: 0;
+             margin-top: 22%;
+             right: 0;
+             position: absolute;
+             font-size:3em;
+             color:white;
+             text-align:center;
+             font-size: 4.9vw;
+         }
+    }
 }
