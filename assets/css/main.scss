@@ -104,3 +104,20 @@ body {
       }
     }
 }
+
+@media screen and (max-width: 600px){
+body {
+    .hero_background-container{ 
+
+        .hero-header {
+            margin-top: 75%;
+
+        }
+
+        img {
+            height: 700px;
+            object-fit: cover;
+        }
+    }
+    }
+}
