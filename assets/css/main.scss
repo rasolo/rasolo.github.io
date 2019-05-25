@@ -18,7 +18,7 @@ body {
     font-family: "lobster", cursive;
     font-size: 8vw;
   }
-  .hero_background-container {
+  #hero_background-container {
     position: relative;
 
     img {
@@ -147,7 +147,7 @@ body {
       height: 65vw;
     }
 
-    .hero_background-container {
+    #hero_background-container {
       .hero-header {
         margin-top: 75%;
       }
@@ -159,3 +159,11 @@ body {
     }
   }
 }
+
+// @media screen and (min-width: 600px) {
+//     body {
+//        h1 img{
+//         content:url("{{ '/assets/img/clouds-4k.jpg' | relative_url }}");
+//        }
+//     }
+//   }

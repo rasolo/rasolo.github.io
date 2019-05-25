@@ -4,28 +4,13 @@ layout: default
 
 <div class="home">
   <section class="hero">
-    <div class="hero_background-container">
+    <div id="hero_background-container">
       <div class="hero-header">
           <h1>Rasmus Olofsson</h1>
       </div>
-      <img src="//unsplash.it/1920/1080">
+      <noscript><img src="{{ '/assets/img/butterfly.jpg' | relative_url }}"></noscript>
     </div>
   </section>
-  <!-- <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <div class="post-section">
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    </div>
-    {% endfor %}
-  </ul>  -->
 
   <div class="posts">
       <h2>Posts</h2>
@@ -45,3 +30,5 @@ layout: default
 
 
 </div>
+<script src="{{ '/assets/js/heroimg.js' | relative_url }}"></script>
+
