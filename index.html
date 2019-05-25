@@ -6,7 +6,7 @@ layout: default
   <section class="hero">
     <div class="hero_background-container">
       <div class="hero-header">
-          <h1>rasmusolofssons.github.io</h1>
+          <h1>Rasmus Olofsson</h1>
       </div>
       <img src="//unsplash.it/1920/1080">
     </div>
@@ -28,17 +28,19 @@ layout: default
   </ul>  -->
 
   <div class="posts">
-      <h2>Here are some posts</h2>
+      <h2>Posts</h2>
     <div class="counters">
         {% for post in site.posts %}
           <div class="section">
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h3>{{ post.title }}</h3>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Open</a>
           </div>
         {% endfor %}
       
       </div>
+      <div class="spacer"></div>
+
   </div>
 
 
