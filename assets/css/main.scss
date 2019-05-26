@@ -3,7 +3,6 @@
 # only Main files contain this front matter, not partials.
 ---
 
-
 html {
   *,
   *::before,
@@ -20,22 +19,21 @@ body {
   }
   #hero_background-container {
     position: relative;
+    display: flex;
+    align-items: center;
 
     img {
       width: 100%;
+      height: 50vw;
       border-radius: 2%;
     }
 
     .hero-header {
       position: absolute;
       left: 0;
-      margin-top: 22%;
       right: 0;
-      position: absolute;
-      font-size: 3em;
       color: white;
       text-align: center;
-      font-size: 4.9vw;
     }
   }
 
@@ -68,7 +66,7 @@ body {
       position: relative;
       text-align: center;
       margin-bottom: 10%;
-      white-space:nowrap;
+      white-space: nowrap;
       .post-meta {
         display: block;
         margin: 5%;
@@ -80,9 +78,7 @@ body {
       }
       .post-link {
         color: #ffffff;
-
         text-decoration: none;
-
         z-index: 1;
         font-weight: bold;
       }
@@ -92,19 +88,12 @@ body {
         content: "";
 
         border: 5px solid #232020;
-
         background-color: green;
-
         color: #ffffff;
-
         text-decoration: none;
-
         font-size: 30px;
-
         border-radius: 50%;
-
         position: absolute;
-
         width: 100%;
         height: 28%;
         left: 0;
@@ -146,24 +135,8 @@ body {
     .spacer {
       height: 65vw;
     }
-
-    #hero_background-container {
-      .hero-header {
-        margin-top: 75%;
-      }
-
-      img {
-        height: 700px;
-        object-fit: cover;
-      }
+    #hero_background-container img {
+      height: 140vw;
     }
   }
 }
-
-// @media screen and (min-width: 600px) {
-//     body {
-//        h1 img{
-//         content:url("{{ '/assets/img/clouds-4k.jpg' | relative_url }}");
-//        }
-//     }
-//   }
