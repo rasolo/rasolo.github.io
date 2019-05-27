@@ -101,6 +101,10 @@ body {
         bottom: -10%;
       }
 
+      .post-link:hover::before {
+        background-color: darkgreen;
+      }
+
       .post-link::after {
         content: "";
         margin-bottom: 10%;
