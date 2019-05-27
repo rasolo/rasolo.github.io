@@ -7,7 +7,7 @@
     div.appendChild(img);
 
     function getImageSrc() {
-        if (userUse4k()) {
+        if (userUseHighRes()) {
             return "/assets/img/daylight-xl.jpg";
         }
 
@@ -20,8 +20,8 @@
         return isPhone;
     }
 
-    function userUse4k() {
-        if (screen.width >= 3840) {
+    function userUseHighRes() {
+        if (screen.width >= 2500) {
             return true;
         }
 
