@@ -17,4 +17,11 @@ let pokemon = [
     },
 ];
 
+function  get (name) {
+    return pokemon.find(function (pokemon) {
+        return pokemon.name === name;
+    });
+}
+
+exports.get = get;
 exports.list = pokemon;
