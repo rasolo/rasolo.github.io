@@ -14,16 +14,28 @@ module.exports = function () {
         return;
     }
 
-    let img = document.createElement("img");
-    img.setAttribute("src", getImageSrc());
-    div.appendChild(img);
+    (function setImageSrc() {
+        let img = document.querySelectorAll('#hero-img')[0];
+        let imgType = img.dataset.heroType;
+        let imgSrc = getImageSrc(imgType);
 
-    function getImageSrc() {
+        img.src = imgSrc;
+    })();
+
+    function getImageSrc(imgType) {
+        let imgSrc = "/assets/img/daylight-fhd.jpg";
+        if (imgType === "pokemon-evolve") {
+            imgSrc = "/assets/img/pokemon-fhd.jpg"
+
+
+            return imgSrc;
+        }
+
         if (userUseHighRes()) {
             return "/assets/img/daylight-xl.jpg";
         }
 
-        return "/assets/img/daylight-fhd.jpg";
+        return imgSrc;
     }
 
     function userUseMobilePhone() {

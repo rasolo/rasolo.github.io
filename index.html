@@ -3,31 +3,23 @@ layout: default
 ---
 
 <div class="home">
-  <section class="hero">
-    <div id="hero_background-container">
-      <div class="hero-header">
-          <h1>Rasmus Olofsson</h1>
-      </div>
-      <noscript><img src="{{ '/assets/img/daylight-fhd.jpg' | relative_url }}"></noscript>
-    </div>
-  </section>
+  {% include hero.html title="Rasmus Olofsson" imgSrc="assets/img/daylight-fhd.jpg" heroType="start-page" imgAlt="A picture of a lake and mountains"%}
 
   <div class="posts">
-      <h2>Latest posts</h2>
+    <h2>Latest posts</h2>
     <div class="counters">
-        {% for post in site.posts %}
-          <div class="section">
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <h3>{{ post.title }}</h3>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Open</a>
-          </div>
-        {% endfor %}
-      
+      {% for post in site.posts %}
+      <div class="section">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h3>{{ post.title }}</h3>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Open</a>
       </div>
-      <div class="spacer"></div>
+      {% endfor %}
+
+    </div>
+    <div class="spacer"></div>
 
   </div>
 
 
 </div>
-
