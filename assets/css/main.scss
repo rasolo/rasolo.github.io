@@ -3,6 +3,9 @@
 # only Main files contain this front matter, not partials.
 ---
 
+@import "pokemon";
+@import "footer";
+
 html {
   *,
   *::before,
@@ -13,6 +16,7 @@ html {
   }
 }
 body {
+
   h1 {
     font-family: "lobster", cursive;
     font-size: 8vw;
@@ -42,8 +46,7 @@ body {
   }
 
   .posts {
-    padding: 5%;
-
+    margin-top: 5%;
     h2 {
       text-align: center;
       margin-bottom: 0.5em;
@@ -61,7 +64,7 @@ body {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       justify-items: center;
-      grid-gap: 5%;
+      grid-gap: 50px;
 
       div {
         display: inline-block;
@@ -132,14 +135,13 @@ body {
   }
   .spacer {
     height: 50px;
-    margin: 0 0 -50px 0;
   }
 }
 
 @media screen and (max-width: 600px) {
   body {
     .spacer {
-      height: 65vw;
+      height: 15vw;
     }
     #hero_background-container img {
       height: 140vw;
