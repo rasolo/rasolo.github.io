@@ -41,8 +41,8 @@ module.exports = function () {
         let numberOfTimesEvolve = calcNumEvolveTimes(selectedPokemonName, pokemonAmounts);
 
 
-        let displayNumOfTimesEvolveBox = document.querySelectorAll('.evolveTimes')[0];
-        displayNumOfTimesEvolveBox.innerText = `You can evolve ${selectedPokemonName}  ${numberOfTimesEvolve} times`;
+        let displayNumOfTimesEvolveBox = document.querySelectorAll('#pokemonEvolveResult')[0];
+        displayNumOfTimesEvolveBox.value = `You can evolve ${selectedPokemonName}  ${numberOfTimesEvolve} times`;
     }
 
     function getPokeSelect() {
